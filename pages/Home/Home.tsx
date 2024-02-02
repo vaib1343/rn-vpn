@@ -1,12 +1,11 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
+import {globalStyles} from '../../assets/styles/global.styles';
 
 const Home = () => {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Home</Text>
-      </View>
+    <SafeAreaView style={[globalStyles.flex, globalStyles.backgroundLight]}>
+      <Text>red</Text>
     </SafeAreaView>
   );
 };

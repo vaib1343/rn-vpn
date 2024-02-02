@@ -8,7 +8,11 @@ const Stack = createStackNavigator();
 
 export default function Routes() {
   return (
-    <Stack.Navigator initialRouteName={routesConfig.HOME}>
+    <Stack.Navigator
+      initialRouteName={routesConfig.HOME}
+      screenOptions={{
+        header: () => null,
+      }}>
       <Stack.Screen name={routesConfig.HOME} component={Home} />
       <Stack.Screen name={routesConfig.SERVER} component={Server} />
     </Stack.Navigator>
